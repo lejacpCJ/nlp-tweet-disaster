@@ -1,0 +1,23 @@
+Using text column: text_kw
+Train size: 6471 | Val size: 1142
+Vocab size: 4346 (min_freq=3, max_size=30000)
+Epoch 01/10 | train_loss=0.6110 train_f1~=0.5448 | val_loss=0.5266 val_f1=0.7168 (P=0.736, R=0.699) | thr=0.500
+Epoch 02/10 | train_loss=0.5096 train_f1~=0.7025 | val_loss=0.4948 val_f1=0.7378 (P=0.694, R=0.788) | thr=0.290
+Epoch 03/10 | train_loss=0.4670 train_f1~=0.7254 | val_loss=0.4703 val_f1=0.7445 (P=0.730, R=0.760) | thr=0.400
+Epoch 04/10 | train_loss=0.4343 train_f1~=0.7651 | val_loss=0.4682 val_f1=0.7522 (P=0.799, R=0.711) | thr=0.480
+Epoch 05/10 | train_loss=0.4026 train_f1~=0.7788 | val_loss=0.4852 val_f1=0.7513 (P=0.768, R=0.735) | thr=0.430
+Epoch 06/10 | train_loss=0.3610 train_f1~=0.8083 | val_loss=0.4848 val_f1=0.7393 (P=0.739, R=0.739) | thr=0.340
+Early stopping at epoch 6. Best val F1: 0.7522
+
+Final Validation Metrics:
+Threshold=0.480 Precision=0.7986 Recall=0.7108 F1=0.7522
+
+Classification report (val):
+              precision    recall  f1-score   support
+
+           0     0.7986    0.8648    0.8304       651
+           1     0.7986    0.7108    0.7522       491
+
+    accuracy                         0.7986      1142
+   macro avg     0.7986    0.7878    0.7913      1142
+weighted avg     0.7986    0.7986    0.7967      1142
